@@ -1,0 +1,16 @@
+{
+  "name": "CHANGELOG.md",
+  "description": "Oodrive R&Day Changelog lightning talk",
+  "version": "0.0.1",
+  "author": "Adrien Gibrat <adrien.gibrat@gmail.com",
+  "homepage": "https://adriengibrat.github.io/CHANGELOG.md",
+  "repository": "github:adriengibrat/CHANGELOG.md",
+  "license": "WTFPL",
+  "dev-dependencies": {
+    "markdown-to-slides": "^1.0.3"
+  },
+  "scripts": {
+    "start": "npm run build -- --watch",
+    "build": "markdown-to-slides --document-mode --level 2 --include-remark --style RnDays.css --output-file index.html README.md"
+  }
+}
